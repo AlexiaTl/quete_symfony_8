@@ -25,7 +25,7 @@ class CategoryController extends AbstractController
             $objectManager->persist($category);
             $objectManager->flush();
 
-            return $this->redirectToRoute('category_add');
+            return $this->redirectToRoute('blog_index');
         }
 
         return $this->render('category/index.html.twig', [
