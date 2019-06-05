@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tags{% endblock %}
+
+{% block body %}
+
+       <h1>{{ tag.name }}</h1>
+    {% for article in articles %}
+
+
+        <div>
+            <h2>{{ article.title }} - Category : {{ article.category.name }}</h2>
+            <p>{{ article.content }}</p>
+        </div>
+    {% endfor %}
+
+    <a href="{{ path('blog_index') }}">
+        Back to homepage.
+    </a>
+    <br>
+
+    <a href="{{ path('article_index') }}">back to list</a>
+
+
+{% endblock %}
