@@ -51,9 +51,9 @@ class Category
     }
 
     /**
-     * @return Collection|Article[]
+     * @return ArrayCollection|Article[]
      */
-    public function getArticles(): Collection
+    public function getArticles(): ArrayCollection
     {
         return $this->articles;
     }

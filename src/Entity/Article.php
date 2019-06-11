@@ -86,9 +86,9 @@ class Article
     }
 
     /**
-     * @return Collection|Tag[]
+     * @return ArrayCollection|Tag[]
      */
-    public function getTags(): Collection
+    public function getTags(): ArrayCollection
     {
         return $this->tags;
     }
